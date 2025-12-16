@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - TIP TOP</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* SINGLE PRODUCT PAGE STYLES */
+        #prodetails {
+            display: flex;
+            margin-top: 20px;
+            gap: 30px;
+        }
+
+        .single-prod-img {
+            width: 40%;
+            min-width: 300px;
+        }
+
+        .small-img-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .small-img-col img {
+            width: 100%;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .small-img-col img:hover {
+            transform: scale(1.05);
+        }
+
+        .single-prod-details {
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        .single-prod-details h4 {
+            padding: 40px 0 20px 0;
+        }
+
+        .single-prod-details h2 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .single-prod-details select {
+            display: block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .single-prod-details input {
+            width: 70px;
+            padding: 10px 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .single-prod-details button {
+            background-color: #fb774b;
+            color: #fff;
+            border: none;
+            padding: 12px 50px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .single-prod-details button:hover {
+            background-color: #088178;
+        }
+
+        .single-prod-details span {
+            line-height: 3;
+        }
+
+        #prodetails .star {
+            font-size: 1.1rem;
+            color: #fb774b;
+            margin: 10px 0;
+        }
+
+        .pro-details-info {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e2e9e1;
+        }
+
+        .pro-details-info h4 {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .pro-details-info ul {
+            margin-left: 20px;
+            list-style: disc;
+        }
+
+        .pro-details-info ul li {
+            margin-bottom: 8px;
+            color: #465b52;
+        }
+
+        @media (max-width: 799px) {
+            #prodetails {
+                flex-direction: column;
+            }
+
+            .single-prod-img {
+                width: 100%;
+            }
+
+            .single-prod-details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER/NAVIGATION -->
+    <section id="header">
+        <a href="index.html" class="logo-link">
+            <h2 class="logo">TIP TOP</h2>
+        </a>
+        <div class="nav-container">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- SINGLE PRODUCT DETAILS -->
+    <section id="prodetails" class="section-p1">
+        <div class="single-prod-img">
+            <img src="img/clothes/c1.jpg" width="100%" id="MainImg" alt="Product Main Image">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/clothes/c1.jpg" width="100%" class="small-img" alt="Product Image 1">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/clothes/c2.jpg" width="100%" class="small-img" alt="Product Image 2">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/clothes/c3.jpg" width="100%" class="small-img" alt="Product Image 3">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/clothes/c4.jpg" width="100%" class="small-img" alt="Product Image 4">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-prod-details">
+            <h6>TIP TOP Product</h6>
+            <h2>Premium Cotton T-Shirt</h2>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <span> (2 reviews)</span>
+
+            <h4>$78</h4>
+            <select>
+                <option>Select Size</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <select>
+                <option>Select Color</option>
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+                <option>Black</option>
+                <option>White</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <button onclick="addToCart('Premium Cotton T-Shirt', '$78')">Add To Cart</button>
+
+            <h4 style="margin-top: 30px;">Product Details</h4>
+            <span>
+                <strong>Category:</strong> Clothing | <strong>Tags:</strong> T-Shirt, Cotton, Casual
+            </span>
+
+            <div class="pro-details-info">
+                <h4>Features & Benefits</h4>
+                <ul>
+                    <li>100% Premium Cotton Fabric</li>
+                    <li>Comfortable and Breathable</li>
+                    <li>Available in Multiple Sizes</li>
+                    <li>Easy Machine Wash</li>
+                    <li>Perfect for Casual Wear</li>
+                    <li>Durable and Long-Lasting</li>
+                </ul>
+            </div>
+
+            <div class="pro-details-info">
+                <h4>Shipping Information</h4>
+                <span>
+                    Free shipping on orders over $100. Standard shipping takes 5-7 business days. Express shipping available.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section id="product1" class="section-p1">
+        <h2>Related Products</h2>
+        <p>Check out similar items</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/clothes/c2.jpg" alt="Casual Shirt">
+                <div class="des">
+                    <span>TIP TOP</span>
+                    <h5>Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$95</h4>
+                </div>
+                <a href="sproduct.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/clothes/c3.jpg" alt="Premium Hoodie">
+                <div class="des">
+                    <span>TIP TOP</span>
+                    <h5>Premium Hoodie</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$120</h4>
+                </div>
+                <a href="sproduct.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/clothes/c4.jpg" alt="Denim Jeans">
+                <div class="des">
+                    <span>TIP TOP</span>
+                    <h5>Denim Jeans</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$110</h4>
+                </div>
+                <a href="sproduct.html"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>About TIP TOP</h4>
+            <p>Welcome to TIP TOP - Your one-stop shop for premium fashion, accessories, and lifestyle products.</p>
+        </div>
+        <div class="col">
+            <h4>Get Help</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+        </div>
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="follow">
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Secured Payment Gateway</h4>
+            <img src="img/payment.png" alt="Payment Methods">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; 2025 TIP TOP. All rights reserved. | Terms & Conditions | Privacy Policy</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script>
+        const imgs = document.querySelectorAll('.small-img');
+        const mainImg = document.getElementById('MainImg');
+
+        imgs.forEach(img => {
+            img.addEventListener('click', function() {
+                mainImg.src = this.src;
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
