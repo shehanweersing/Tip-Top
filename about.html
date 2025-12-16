@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TIP TOP</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ABOUT PAGE STYLES */
+        #page-header {
+            background: linear-gradient(45deg, #fb774b 0%, #ff9c6e 100%);
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 80px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        #page-header h2 {
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        .about-section {
+            padding: 40px 80px;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #465b52;
+        }
+
+        .about-text ul {
+            margin-left: 20px;
+            list-style: disc;
+        }
+
+        .about-text ul li {
+            margin-bottom: 10px;
+            color: #465b52;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-values {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .value-box {
+            text-align: center;
+            padding: 30px;
+            background: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-box i {
+            font-size: 3rem;
+            color: #fb774b;
+            margin-bottom: 15px;
+        }
+
+        .value-box h4 {
+            margin: 15px 0;
+            color: #1d1d1d;
+        }
+
+        .value-box p {
+            font-size: 0.95rem;
+            color: #465b52;
+        }
+
+        @media (max-width: 799px) {
+            #page-header {
+                height: 30vh;
+                padding: 0 20px;
+            }
+
+            .about-section {
+                padding: 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-values {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER/NAVIGATION -->
+    <section id="header">
+        <a href="index.html" class="logo-link">
+            <h2 class="logo">TIP TOP</h2>
+        </a>
+        <div class="nav-container">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- PAGE HEADER -->
+    <section id="page-header">
+        <h2>About Us</h2>
+        <p>Learn more about TIP TOP and our story</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Welcome to TIP TOP</h2>
+                <p>TIP TOP is a premier online fashion and lifestyle retailer dedicated to bringing you the latest trends, quality products, and exceptional customer service. Founded with a passion for style and quality, we've grown to become a trusted name in e-commerce.</p>
+                <p>Our mission is simple: to provide our customers with premium products at competitive prices while maintaining the highest standards of quality and customer satisfaction.</p>
+                <h4 style="margin-top: 20px;">Why Choose TIP TOP?</h4>
+                <ul>
+                    <li>Curated selection of premium products</li>
+                    <li>Fast and reliable shipping</li>
+                    <li>Easy returns and exchanges</li>
+                    <li>Secure payment processing</li>
+                    <li>Excellent customer support</li>
+                    <li>Regular sales and exclusive deals</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <img src="img/featured/f1.png" alt="About TIP TOP">
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px;">Our Values</h2>
+        <div class="about-values">
+            <div class="value-box">
+                <i class="fas fa-heart"></i>
+                <h4>Quality First</h4>
+                <p>We believe in offering only the best quality products to our valued customers. Every item is carefully selected.</p>
+            </div>
+            <div class="value-box">
+                <i class="fas fa-handshake"></i>
+                <h4>Customer Trust</h4>
+                <p>Building lasting relationships with our customers through transparency, honesty, and exceptional service.</p>
+            </div>
+            <div class="value-box">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Innovation</h4>
+                <p>Constantly exploring new products, styles, and ways to improve your shopping experience with us.</p>
+            </div>
+        </div>
+
+        <!-- OWNER SECTION -->
+        <h2 style="text-align: center; margin-top: 60px; margin-bottom: 40px;">Meet Our Founder</h2>
+        <div style="display: flex; justify-content: center; margin-bottom: 60px;">
+            <div style="text-align: center;">
+                <img src="img/chanaka.jpg" alt="Owner - Chanaka S Weerasinghe" style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: 0 10px 30px rgba(0,217,217,0.3); border: 5px solid #FFD700; display: block; margin: 0 auto;">
+                <h4 style="margin-top: 20px; color: #1d1d1d; font-size: 1.5rem; font-weight: 800; background: linear-gradient(135deg, #FF006E 0%, #00D9D9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 1px;">Chanaka S Weerasinghe</h4>
+                <p style="color: #00D9D9; font-weight: 600; margin-top: 5px;">Founder & CEO</p>
+                <p style="color: #1a1a2e; margin-top: 15px; max-width: 300px; line-height: 1.6;">Leading TIP TOP with passion and dedication to bring the best products and experiences to our customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>About TIP TOP</h4>
+            <p>Welcome to TIP TOP - Your one-stop shop for premium fashion, accessories, and lifestyle products.</p>
+        </div>
+        <div class="col">
+            <h4>Get Help</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+        </div>
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="follow">
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Secured Payment Gateway</h4>
+            <img src="img/payment.png" alt="Payment Methods">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; 2025 TIP TOP. All rights reserved. | Terms & Conditions | Privacy Policy</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

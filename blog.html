@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TIP TOP</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* BLOG PAGE STYLES */
+        #page-header {
+            background: linear-gradient(45deg, #fb774b 0%, #ff9c6e 100%);
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 80px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        #page-header h2 {
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        #page-header p {
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 0 80px;
+        }
+
+        .blog-box {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+
+        .blog-box:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-content h5 {
+            font-size: 0.9rem;
+            color: #fb774b;
+            margin-bottom: 8px;
+        }
+
+        .blog-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .blog-content p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .blog-content a {
+            color: #088178;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .blog-content a:hover {
+            color: #fb774b;
+        }
+
+        @media (max-width: 799px) {
+            #page-header {
+                height: 30vh;
+                padding: 0 20px;
+            }
+
+            #page-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .blog-container {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER/NAVIGATION -->
+    <section id="header">
+        <a href="index.html" class="logo-link">
+            <h2 class="logo">TIP TOP</h2>
+        </a>
+        <div class="nav-container">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- PAGE HEADER -->
+    <section id="page-header">
+        <h2>Blog</h2>
+        <p>Read our latest news and fashion tips</p>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-container section-p1">
+        <div class="blog-box">
+            <img src="img/blog/b1.jpg" alt="Fashion Blog" class="blog-img">
+            <div class="blog-content">
+                <h5>December 14, 2025</h5>
+                <h4>Top 5 Winter Fashion Trends</h4>
+                <p>Discover the hottest winter fashion trends that will keep you stylish and warm. From cozy sweaters to elegant coats, we've covered everything you need to know.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <img src="img/blog/b2.jpg" alt="Style Guide" class="blog-img">
+            <div class="blog-content">
+                <h5>December 12, 2025</h5>
+                <h4>How to Style Denim Jeans</h4>
+                <p>Learn different ways to style your favorite denim jeans for any occasion. From casual to formal, we'll show you how to make denim work for you.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <img src="img/blog/b3.jpg" alt="Shopping Guide" class="blog-img">
+            <div class="blog-content">
+                <h5>December 10, 2025</h5>
+                <h4>Smart Shopping Tips at TIP TOP</h4>
+                <p>Get the most out of your shopping experience with our exclusive tips and tricks. Save money while getting the best quality products from TIP TOP.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <img src="img/blog/b4.jpg" alt="Accessories" class="blog-img">
+            <div class="blog-content">
+                <h5>December 8, 2025</h5>
+                <h4>Complete Accessory Guide</h4>
+                <p>Accessories are the perfect way to complete your outfit. Learn how to choose the right accessories to elevate your style and make a statement.</p>
+                <a href="#">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>About TIP TOP</h4>
+            <p>Welcome to TIP TOP - Your one-stop shop for premium fashion, accessories, and lifestyle products.</p>
+        </div>
+        <div class="col">
+            <h4>Get Help</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Track Order</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+        </div>
+        <div class="col">
+            <h4>Follow Us</h4>
+            <div class="follow">
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/chanaka.surendra.2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Secured Payment Gateway</h4>
+            <img src="img/payment.png" alt="Payment Methods">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; 2025 TIP TOP. All rights reserved. | Terms & Conditions | Privacy Policy</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
